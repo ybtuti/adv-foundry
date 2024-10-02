@@ -33,3 +33,6 @@
 [submodule "upgrades/lib/openzeppelin-contracts"]
 	path = upgrades/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "upgrades/lib/openzeppelin-contracts-upgradeable"]
+	path = upgrades/lib/openzeppelin-contracts-upgradeable
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable
