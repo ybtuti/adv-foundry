@@ -52,3 +52,6 @@
 [submodule "account-abstraction/lib/account-abstraction"]
 	path = account-abstraction/lib/account-abstraction
 	url = https://github.com/eth-infinitism/account-abstraction
+[submodule "account-abstraction/lib/openzeppelin-contracts"]
+	path = account-abstraction/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
