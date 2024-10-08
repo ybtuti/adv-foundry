@@ -4,5 +4,5 @@
 2. Create a basic AA on zksync
 3. deploy, and send a userOp / transaction through them
 
-4. Not going to send an AA to ethereum
-5. Send an AA tx to zksync
+   1. Not going to send an AA to ethereum
+   2. Send an AA tx to zksync
