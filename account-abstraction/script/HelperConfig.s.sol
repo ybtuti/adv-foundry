@@ -30,6 +30,7 @@ contract HelperConfig is Script {
     address constant BURNER_WALLET = 0x88f0807bF33B15BdF234fa2c92B469F665881BCe;
     uint256 constant ARBITRUM_MAINNET_CHAIN_ID = 42_161;
     uint256 constant ZKSYNC_MAINNET_CHAIN_ID = 324;
+    uint256 constant BASE_SEPOLIA_CHAIN_ID = 84532;
     // address constant FOUNDRY_DEFAULT_WALLET = 0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38;
     address constant ANVIL_DEFAULT_ACCOUNT = 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266;
 
@@ -44,6 +45,7 @@ contract HelperConfig is Script {
         networkConfigs[ETH_MAINNET_CHAIN_ID] = getEthMainnetConfig();
         networkConfigs[ZKSYNC_MAINNET_CHAIN_ID] = getZkSyncConfig();
         networkConfigs[ARBITRUM_MAINNET_CHAIN_ID] = getArbMainnetConfig();
+        networkConfigs[BASE_SEPOLIA_CHAIN_ID] = getBaseSepoliaConfig();
     }
 
     function getConfig() public returns (NetworkConfig memory) {
@@ -85,6 +87,14 @@ contract HelperConfig is Script {
         return NetworkConfig({
             entryPoint: 0x0000000071727De22E5E9d8BAf0edAc6f37da032,
             usdc: 0xaf88d065e77c8cC2239327C5EDb3A432268e5831,
+            account: BURNER_WALLET
+        });
+    }
+
+    function getBaseSepoliaConfig() public pure returns (NetworkConfig memory) {
+        return NetworkConfig({
+            entryPoint: 0x012714Ec1bCc94c4c9E00CD914D4602f079494E0,
+            usdc: 0xC57471AFe46fE934FD60F8F8E6dcbb796285B97d, // Update with your own mock token
             account: BURNER_WALLET
         });
     }
