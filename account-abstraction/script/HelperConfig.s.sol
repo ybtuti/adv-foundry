@@ -93,7 +93,7 @@ contract HelperConfig is Script {
 
     function getBaseSepoliaConfig() public pure returns (NetworkConfig memory) {
         return NetworkConfig({
-            entryPoint: 0x012714Ec1bCc94c4c9E00CD914D4602f079494E0,
+            entryPoint: 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789,
             usdc: 0xC57471AFe46fE934FD60F8F8E6dcbb796285B97d, // Update with your own mock token
             account: BURNER_WALLET
         });
